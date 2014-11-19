@@ -344,7 +344,7 @@ a{
 .work__header {
   height: 30vh;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   @media screen and (min-width: 500px) {
     height: 60vh;
 
@@ -361,6 +361,10 @@ a{
       text-decoration: none;
     }
   }
+}
+
+.work li a {
+  font-weight: bold;
 }
 
 .btn__prev {

@@ -4,8 +4,10 @@ layout: default
 
   {% if page.cover %}
     <header  style="background-image: url({{ page.cover | prepend: site.baseurl }})" class="work__header">
-  {% else %}
+  {% elsif page.bgColor %}
     <header  style="background: {{ page.bgColor }}" class="work__header">
+  {% else %}
+    <header  style="background: #F4D03F;" class="work__header">
   {% endif %}
     <h2 class="work__title">{{ page.title }}</h2>
   </header>

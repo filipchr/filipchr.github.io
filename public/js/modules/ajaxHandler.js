@@ -19,10 +19,10 @@ define([
         dataType: 'html'
       });
 
-     /* ga('send', 'pageview', {
-        'page': State.url,
+      ga('send', 'pageview', {
+        'page': url,
         'title': document.title
-      });*/
+      });
     },
     listner: function() {
       $('a:not([href^="#"], .skip__ajax)').on('click', this.fire)

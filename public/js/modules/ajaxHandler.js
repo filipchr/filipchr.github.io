@@ -25,7 +25,7 @@ define([
       });
     },
     listner: function() {
-      $('a:not([href^="#"], .skip__ajax)').on('click', this.fire)
+      $('a:not([href^="#"], .skip__ajax, .work__wrapper a)').on('click', this.fire)
     },
 
     init: function() {

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body id="body__class">
+    <div id="main__content">
+
+    <div class="header">
+      <a class="menu__trigger" href="#main__nav">Menu<span></span></a>
+    </div>
+
+    <div class="page__content">
+      {{ content }}
+
+      <div class="wrapper">
+        {% if page.previous || page.next %}
+          <nav class="pagination" role="navigation">
+             {% if page.previous %}
+              <a href="{{ site.baseurl }}{{ page.previous.url }}"
+                  class="btn btn__prev"
+                  {%if page.previous.cover %} data-image="{{page.previous.cover}}" {%endif%}
+                  title="{{ page.previous.title }}">Previous article</a>
+            {% endif %}
+            {% if page.next %}
+              <a href="{{ site.baseurl }}{{ page.next.url }}"
+              class="btn btn__next"
+              {%if page.next.cover %} data-image="{{page.next.cover}}" {%endif%}
+              title="{{ page.next.title }}">Next article</a>
+            {% endif %}
+          </nav>
+        {% endif %}
+      </div>
+    </div>
+
+
+
+    <div class="shadow-layer"></div>
+
+    </div>
+    {% include header.html %}
+  </body>
+  {% include footer.html %}
+</html>

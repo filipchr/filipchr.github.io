@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+  {% if page.cover %}
+    <header  style="background-image: url({{ page.cover | prepend: site.baseurl }})" class="work__header">
+  {% else %}
+    <header  style="background: {{ page.bgColor }}" class="work__header">
+  {% endif %}
+    <h2 class="work__title">{{ page.title }}</h2>
+  </header>
+
+
+<section class="work__wrapper">
+  <div class="wrapper">
+    <article class="work__content">
+      <header>
+        {% unless page.cover %}
+          <h2 class="work__title-self">{{ page.title }}</h2>
+        {% endunless %}
+        <p class="work__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      </header>
+      {{ content }}
+    </article>
+  </div>
+</section>

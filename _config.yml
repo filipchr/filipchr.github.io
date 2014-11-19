@@ -1,0 +1,19 @@
+# Site settings
+title: Hybrid designer/developer
+email: flpchrsn@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hybrid designer/developer living in Jönköping, Sweden.
+  This is my portfolio.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://filipchr.github.io/" # the base hostname & protocol for your site
+devUrl: 'http://0.0.0.0:4000'
+twitter_username: flpchr
+github_username:  filipchr
+
+permalink:     /:categories/:title
+
+# Build settings
+markdown: kramdown
+
+sass:
+  style: :compressed

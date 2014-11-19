@@ -1,0 +1,23 @@
+---
+layout: default
+title: Work
+permalink: /work/
+weight: 10
+---
+
+
+
+<section class="work">
+  <header class="work__page-header">
+    <h2 class="page__title">my work</h2>
+  </header>
+  <div class="wrapper">
+    <ul class="unstyled">
+      {% for work in site.categories['work'] %}
+          <li>
+            <a href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a>
+          </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

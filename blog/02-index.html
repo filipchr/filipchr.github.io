@@ -1,0 +1,31 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+
+<section class="blog">
+  <header class="blog__page-header">
+    <h2 class="page__title">my words</h2>
+  </header>
+  <div class="wrapper">
+
+    {% if site.categories['blog'] %}
+      <ul class="unstyled">
+        {% for post in site.categories['blog'] %}
+
+
+            <li>
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </li>
+
+        {% endfor %}
+
+      </ul>
+    {% else %}
+      <h2 class="blog__no-content">Fudge.... nothing here <br>yet.</h2>
+    {% endif %}
+
+  </div>
+</section>

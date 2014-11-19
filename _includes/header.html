@@ -1,0 +1,17 @@
+<nav id="main__nav">
+  <ul>
+    <li>
+      <a class="page__link-logo ajax__link" href="/"><span>Home</span></a>
+    </li>
+
+    {% for page in site.pages | sort:weight %}
+      {% if page.title %}
+      <li>
+        <a class="page__link ajax__link" href="{{ page.url | prepend: site.baseurl }}"><span>{{ page.title }}</span></a>
+      </li>
+      {% endif %}
+
+    {% endfor %}
+    <a href="#0" class="close__menu"><span>Close</span></a>
+  </ul>
+</nav>

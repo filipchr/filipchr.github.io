@@ -1,12 +1,13 @@
 require.config({
   paths: {
     jquery: '/public/assets/jquery/dist/jquery.min',
-    modernizr: '/public/assets/modernizr/modernizr.js'
+    modernizr: '/public/assets/modernizr/modernizr'
   }
 });
 
-require(['jquery', 'modules/menu', 'modules/pagei_nav', 'modules/parallax', 'modules/ajaxHandler'], function($, menu, page, parallax, ajaxHandler) {
+require(['jquery', 'modernizr', 'modules/frontLoad', 'modules/menu', 'modules/pagei_nav', 'modules/parallax', 'modules/ajaxHandler'], function($, modernizr, frontLoad, menu, page, parallax, ajaxHandler) {
 
-  $('body').addClass('loaded');
+	frontLoad;
+	$('body').addClass('loaded');
 
 });

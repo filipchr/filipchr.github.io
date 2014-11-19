@@ -17,12 +17,12 @@ body{
   margin: 0;
   padding: 0;
   position: relative;
-  opacity: 0;
+  //opacity: 0;
   transition-property: opacity;
   transition-duration: 300ms;
   transition-delay: 250ms;
   &.loaded {
-    opacity: 1;
+   // opacity: 1;
 
   }
 }
@@ -74,6 +74,8 @@ a{
   transition: background 200ms;
 }
 
+
+
 .work__page-header,
 .blog__page-header,
 .home__page-header{
@@ -89,6 +91,7 @@ a{
     text-transform: uppercase;
     font-family: $base-font-family;
     font-size: 3em;
+    margin-bottom: 0;
 
     @media screen and (min-width: 767px) {
       text-align: right;
@@ -98,11 +101,37 @@ a{
     }
 
   }
-
 }
 .home__page-header {
   background-color: #E30B5D;
 }
+
+.csstransforms .home {
+  .page__title {
+    transform: translateX(100%);
+    opacity: 0;
+    &.slide__in {
+      transform: translateX(0);
+      opacity: 1;
+      transition-property: opacity transform;
+      transition-duration: 300ms;
+      transition-delay: 100ms;
+    }
+  }
+  .wrapper {
+    transform: translateY(100%);
+    opacity:0;
+    &.fade__in {
+      transform: translateY(0);
+      opacity:1;
+      transition-property: opacity transform;
+      transition-duration: 300ms;
+      transition-delay: 300ms;
+    }
+  }
+}
+
+
 
 .work__page-header {
   background-color: #6BEFD5;

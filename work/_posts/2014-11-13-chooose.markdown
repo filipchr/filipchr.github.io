@@ -1,8 +1,7 @@
 ---
 layout: work
-title:  'Chooo.se'
+title:  'chooo.se'
 date:   2014-11-19 15:30:00
-cover: '/assets/sensestation.jpg'
 bgColor: '#FF7CBA'
 external-link: http://chooo.se/
 ---

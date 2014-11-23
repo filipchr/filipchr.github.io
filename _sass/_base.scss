@@ -151,8 +151,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(940px - (#{$spacing-unit} * 2));
+    max-width:         calc(940px - (#{$spacing-unit} * 2));
     padding: $spacing-unit;
     margin-left: auto;
     margin-right: auto;

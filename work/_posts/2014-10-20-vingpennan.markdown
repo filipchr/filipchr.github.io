@@ -1,0 +1,13 @@
+---
+layout: work
+title:  'Vingpennan'
+date:   2014-10-19 13:12:00
+cover: '/assets/vingpennan.jpg'
+external-link: http://www.vingpennan.se/
+---
+
+I got in contact with PS Kommunikation (a webagency based in Jönköping) during my internship.
+
+They wanted help with implementing their new wordpress site and I gladly helpt them.
+
+Check out their site [here](http://pskommunikation.se).

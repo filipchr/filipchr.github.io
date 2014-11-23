@@ -16,4 +16,4 @@ with pictures with no facial expressions, and a video background to get more dep
 
 At the day of the exibition there were close 300 people presant.
 
-The page is built opon Wordpress for the back-end, and custom javascript and scss for the front-end.
+The page is built upon Wordpress for the back-end, and custom javascript and scss for the front-end.

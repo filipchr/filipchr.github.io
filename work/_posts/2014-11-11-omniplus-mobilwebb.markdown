@@ -11,4 +11,5 @@ program a dedicated mobilesite for a big bus service company with lots of intern
 
 
 
-The site is built opon Drupal for the backend and Foundation for the front-end.
+The site is built upon Drupal for the backend.
+The front-end is based upon Foundation, and then customized to resemble the design.

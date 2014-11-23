@@ -13,6 +13,6 @@ My role was to develop the new website together with 4 more lads. And it was the
 
 Well, the breif were to create a website that was as good as if it were made by an experianced agency. And I think that we did succed with that!
 
-The site is build opon Wordpress for the backend. The front-end is mainly built opon [foundation](http://foundation.zurb.com/), and then customized by hand to fit the need.
+The site is build upon Wordpress for the backend. The front-end is mainly built opon foundation, and then customized by hand to fit the need.
 
 Feel free to checkout the project [here](http://helamanniskanjonkoping.se).

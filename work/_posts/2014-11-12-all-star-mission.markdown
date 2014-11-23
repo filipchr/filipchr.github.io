@@ -12,5 +12,5 @@ All Star Mission wanted a new suit and the result was a new logo and a new websi
 
 The main goal with the website was to make it accessable from any device and easy to use, unlike the previous site.
 
-[Allstarmission.se](http://allstarmission.se) is built opon Wordpress for the backend, and for the front-end the site is based opon [foundation](http://foundation.zurb.com/)
-
+[Allstarmission.se](http://allstarmission.se) is built upon Wordpress for the backend,
+and for the front-end the site is based upon foundation.

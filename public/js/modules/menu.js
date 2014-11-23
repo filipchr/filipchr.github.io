@@ -10,8 +10,16 @@ define(['jquery'], function($){
     },
 
     openMenu: function(e) {
-      $('body').scrollTop();
       e.preventDefault();
+      var h = $(window).height();
+      var d = $(document).scrollTop();
+      var res = ( h - d );
+      console.log(res);
+      if (res < 300 ) {
+        setTimeout(function() {
+          $('body').scrollTop(h - 400)
+        }, 100);
+      }
       App.elements.$main.addClass('move-out');
       App.elements.$nav.addClass('is-visible');
       App.elements.$shadow.addClass('is-visible');

@@ -94,6 +94,9 @@ a {
     &:hover {
         color: darken($brand-color, 15%);
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 

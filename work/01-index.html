@@ -8,16 +8,23 @@ weight: 10
 
 
 <section class="work">
-  <header class="work__page-header">
+    <header class="work__page-header">
     <h2 class="page__title">my work</h2>
-  </header>
-  <div class="wrapper">
-    <ul class="unstyled">
-      {% for work in site.categories['work'] %}
-          <li>
-            <a href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a>
-          </li>
-      {% endfor %}
-    </ul>
-  </div>
+    </header>
+    <article class="wrapper">
+        <header>
+            <p>
+                This list is my collected work as a freelancer.
+                <br>
+                It grows with time!
+            </p>
+        </header>
+        <ul class="unstyled">
+          {% for work in site.categories['work'] %}
+              <li>
+                <a href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a>
+              </li>
+          {% endfor %}
+        </ul>
+    </article>
 </section>

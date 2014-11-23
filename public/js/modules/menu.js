@@ -1,5 +1,5 @@
 define(['jquery'], function($){
-
+    'use strict';
     var App = {
         elements: {
             $trigger : $('.menu__trigger'),
@@ -14,7 +14,6 @@ define(['jquery'], function($){
             var h = $(window).height();
             var d = $(document).scrollTop();
             var res = ( h - d );
-            console.log(res);
             if (res < 300 ) {
                 setTimeout(function() {
                     $('body').scrollTop(h - 400)
@@ -23,16 +22,13 @@ define(['jquery'], function($){
             App.elements.$main.addClass('move-out');
             App.elements.$nav.addClass('is-visible');
             App.elements.$shadow.addClass('is-visible');
-
         },
 
         closeMenu: function(e) {
-
             e.preventDefault();
             App.elements.$main.removeClass('move-out');
             App.elements.$nav.removeClass('is-visible');
             App.elements.$shadow.removeClass('is-visible');
-
         },
 
         listeners: function() {

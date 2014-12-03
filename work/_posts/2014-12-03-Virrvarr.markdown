@@ -1,0 +1,14 @@
+---
+layout: work
+title:  'VIRRVARR Produktion'
+date:   2014-11-19 15:30:00
+bgColor: '#FAEB16'
+external-link: http://virrvarrproduktion.se/
+---
+A new local radio production company by two girls in Jönköping needed a website.
+
+I made all the develepment from front end to back end.
+
+The site is also a backbone for a podcast feed hooked up with iTunes.
+
+Check out the site [here](http://virrvarrproduktion.se/) and stay tuned for the show on radio or on iTunes! 

@@ -8,7 +8,8 @@ var gulp          = require("gulp"),
     livereload    = require("gulp-livereload"),
     uglify        = require('gulp-uglifyjs'),
     lr            = require("tiny-lr"),
-    server        = lr();
+    server        = lr(),
+    rjs = require('gulp-requirejs');
 
 var paths = {
   'mainSass': '/css/main.scss',
@@ -17,9 +18,13 @@ var paths = {
 };
 
 var concatOrder = [
+  'public/assets/requirejs/require.js',
   'public/js/jquery.js',
-  'public/js/*.js'
+  'public/js/modernizr.js',
+  'public/js/*.js',
+  'public/js/**/*.js'
 ]
+
 
 gulp.task('sass', function() {
   return gulp.src(paths.mainSass)
@@ -36,7 +41,7 @@ gulp.task('sass', function() {
 gulp.task('uglify', function() {
   gulp.src(concatOrder)
     .pipe(uglify())
-    .pipe(rename('script.min.js'))
+    .pipe(rename('script-min.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(livereload(server))
 });
@@ -50,7 +55,7 @@ gulp.task('watch', function() {
 
     gulp.watch('_sass/**/*.scss', ['build', 'sass']);
 
-    //gulp.watch('public/js/**/*.js', ['uglify'])
+    gulp.watch('/public/js/**/*.js', ['uglify'])
 
     gulp.watch([
       '_includes/**/*.html',
